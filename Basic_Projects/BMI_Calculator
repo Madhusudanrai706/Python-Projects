@@ -1,0 +1,16 @@
+# bmi calculator
+weight = int(input("enter your weight in kg:- "))
+height = float(input("enter your height in m:- "))
+
+bmi = weight / (height ** 2)
+print(bmi)
+
+# 🚨 Do not modify the values above
+# Write your code below 👇
+
+if bmi < 18.5:
+    print("underweight")  # Corrected: Added this statement
+elif 18.5 <= bmi < 25:  # Corrected: Removed redundant `<= 24.9`
+    print("normal weight")
+else:
+    print("overweight")

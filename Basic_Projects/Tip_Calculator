@@ -1,0 +1,8 @@
+# creating the tip calculator using python
+print("Welcome to the Tip Calculator")
+a = input("Enter the amount of the bill in($) ")
+b = input("How much tip would you like to give? 10, 12, or 15? ")
+c = input("How many people to split the bill?")
+d = (float(a)*int(b)/100+float(a))/int(c)
+
+print("Bill with tip is " + str(round(d)) + " per person") #round funtion round the float number into closet whole number45

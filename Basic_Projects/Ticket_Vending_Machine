@@ -1,0 +1,21 @@
+# Ticket vending machine
+print('Welcome to the roller coster ride')
+a=int(input("Whats your Height(in cm)? "))
+if a >= 120:
+  print("you can go for the ride ")
+  b=int(input("Whats your Age? "))
+  if b <= 12:
+    bill = 5
+    print("pay $5 ")
+  elif 12< b <=18:
+    bill = 7
+    print("Pay $7")
+  else:
+    bill = 10
+    print("pay 10")
+  c=input("if you want photo type yes else no")
+  if c == "yes":
+    bill += 3
+    print(f"Total bill in ${bill}")
+else:
+  print("you can't go for ride increase your height")
