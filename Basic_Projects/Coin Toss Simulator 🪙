@@ -1,0 +1,11 @@
+import random
+
+while True:
+    flip = input("Flip a coin? (yes/no): ").lower()
+    if flip == "yes":
+        print("Heads" if random.randint(0, 1) == 1 else "Tails")
+    elif flip == "no":
+        print("Game Over!")
+        break
+    else:
+        print("Invalid input, type 'yes' or 'no'.")
